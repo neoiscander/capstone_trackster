@@ -1,1 +1,56 @@
+/* Universal styling */
 
+html {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.flex-features {
+  display: flex;
+  align-items: center;
+}
+
+/* Header secton */
+
+header {
+  background-color: rgba(35, 2, 63, 1);
+}
+
+.logo {
+  font-family: Righteous, cursive;
+  color: rgba(255, 0, 171, 1);
+  font-size: 2.5rem;
+}
+
+.title-of-table-columns {
+  background-color: rgba(104, 0, 255, 1);
+  color: white;
+  width: 100%;
+}
+
+button {
+  background-color: rgba(255, 0, 171, 1);
+}
+
+header,
+header div,
+.logo,
+.row,
+.search-input-box,
+.title-of-table-columns,
+.title-of-table-columns h4,
+#search-button {
+  border: 1px solid yellow;
+}
+
+/* Main section */
+
+.main {
+
+}
+
+/* Styling for jquery */
+
+.button-hover {
+  background-color: rgba(255, 0, 171, 0.7);
+}
