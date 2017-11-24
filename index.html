@@ -13,6 +13,10 @@
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="./resources/js/tests.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="./resources/js/trackster.js"></script>
 </head>
 <body>
 
@@ -33,37 +37,41 @@
         <div class="search-input-box flex-features col-md-2">
           <input type="text" placeholder="Whatcha lookin' for" class="input">
         </div>
-        <div class="display-flex col-md-2">
+        <div class="flex-features col-md-2">
           <button id="search-button">
             <i class="fa fa-search fa-lg"></i>
           </button>
         </div>
       </div>
     </div>
-    <!-- Header columns title section -->
-    <div class="container title-of-table-columns">
-      <div class="row flex-features">
-        <h4 class="col-md-1">#</h4>
-        <h4 class="col-md-3">Song</h4>
-        <h4 class="col-md-3">Artist</h4>
-        <h4 class="col-md-2">Album</h4>
-        <h4 class="col-md-2">Popularity</h4>
-        <h4 class="col-md-1">Length</h4>
-      </div>
-    </div>
+
   </header>
 
   <!-- Main section -->
   <div class="main">
-    <p class="add-row"></p>
+    <!-- Header columns title section -->
+    <div class="container-fluid title-of-table-columns">
+      <div class="row flex-features">
+        <h4 class="col-md-3 col-xs-3"></h4>
+        <h4 class="col-md-3 col-xs-3">Song</h4>
+        <h4 class="col-md-2 col-xs-2">Artist</h4>
+        <h4 class="col-md-2 col-xs-2">Album</h4>
+        <h4 class="col-md-2 col-xs-2">Listeners</h4>
+      </div>
+    </div>
+    <!-- Container of requested song list -->
+    <div id="request-list" class="container-fluid">
+      <div id="request-row" class="row flex-features">
+        <h4 class="col-md-3 col-xs-3">
+          <a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be" target="_blank"><i  class="fa fa-play-circle-o fa-lg"></i></a>
+        </h4>
+        <h4 class="col-md-3 col-xs-3">With or without you</h4>
+        <h4 class="col-md-2 col-xs-2">U2</h4>
+        <h4 class="col-md-2 col-xs-2">The Joshua tree</h4>
+        <h4 class="col-md-2 col-xs-2">101,839</h4>
+      </div>
+    </div>
   </div>
-
-  <!-- jquery section -->
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-   crossorigin="anonymous">
-  </script>
-  <script type="text/javascript" src="./resources/js/trackster.js"></script>
-
 
 </body>
 </html>

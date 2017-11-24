@@ -10,6 +10,10 @@ html {
   align-items: center;
 }
 
+.full-screen-width {
+  width: 100%;
+}
+
 /* Header secton */
 
 header {
@@ -25,7 +29,6 @@ header {
 .title-of-table-columns {
   background-color: rgba(104, 0, 255, 1);
   color: white;
-  width: 100%;
 }
 
 button {
@@ -45,8 +48,24 @@ header div,
 
 /* Main section */
 
-.main {
+#request-list {
+  background-color: grey;
+  color: white;
+}
 
+#request-list h4:first-child {
+  text-align: center;
+}
+
+#request-list a {
+  color: white;
+}
+
+/* Border for main section */
+#request-list,
+#request-list h4,
+#request-list i {
+  border: 1px solid orange;
 }
 
 /* Styling for jquery */
