@@ -5,37 +5,86 @@ html {
   font-family: "Work Sans", sans-serif;
 }
 
+h4 {
+  font-size: 1rem;
+  color: rgba(74, 74, 74, 1);
+}
+
 .flex-features {
   display: flex;
   align-items: center;
+
+  /* border: 1px solid yellow; */
 }
 
 .full-screen-width {
   width: 100%;
 }
 
+.border-radius-feature {
+  border-radius: 1.5rem;
+}
+
 /* Header secton */
 
 header {
   background-color: rgba(35, 2, 63, 1);
+  padding: 2.5rem 0;
 }
 
-.logo {
+header:hover {
+  opacity: 0.9;
+  transition: opacity 1s;
+}
+
+.header-title {
   font-family: Righteous, cursive;
   color: rgba(255, 0, 171, 1);
   font-size: 2.5rem;
+  margin: 0;
+
+  /* border: 1px solid red; */
 }
 
-.title-of-table-columns {
-  background-color: rgba(104, 0, 255, 1);
-  color: white;
+.toggle-this-class {
+  color: rgba(255, 255, 0, 0.01);
+  font-size: 5rem;
+  margin-left: 15rem;
+  transition: margin-left 1.5s, color 0.5s, font-size 0.5s;
+}
+
+input {
+  background-color: rgba(191, 191, 191, 1);
+  width: 100%;
+  font-size: 1.35rem;
+}
+
+.search-process {
+  background-color: rgba(74, 74, 74, 1);
+  transition: background-color 0.5s;
 }
 
 button {
-  background-color: rgba(255, 0, 171, 1);
+  background-color: rgba(255, 102, 204, 1);
+  width: 100%;
+
+  /* border: 1px solid rose; */
 }
 
-header,
+#button-feature {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  /* border: 1px solid red; */
+}
+
+input,
+button {
+  height: 3rem;
+}
+
+/* header,
 header div,
 .logo,
 .row,
@@ -44,13 +93,35 @@ header div,
 .title-of-table-columns h4,
 #search-button {
   border: 1px solid yellow;
-}
+} */
 
 /* Main section */
 
+.table-headers {
+  background-color: rgba(104, 0, 255, 1);
+}
+
+.table-headers:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+
+.table-headers h4 {
+  color: rgba(255, 255, 255, 1);
+}
+
 #request-list {
-  background-color: grey;
+  background-color: rgba(204, 204, 204, 1);
   color: white;
+}
+
+#request-list .row {
+  border: 1px solid silver;
+}
+
+#request-list .row:hover {
+  background-color: rgba(234, 230, 227, 0.7);
+  transition: background-color 0.4s;
 }
 
 #request-list h4:first-child {
@@ -62,14 +133,16 @@ header div,
 }
 
 /* Border for main section */
-#request-list,
+
+/* #request-list,
 #request-list h4,
 #request-list i {
   border: 1px solid orange;
-}
+} */
 
 /* Styling for jquery */
 
 .button-hover {
-  background-color: rgba(255, 0, 171, 0.7);
+  background-color: rgba(255, 102, 204, 0.7);
+  transition: background-color 0.5s ease-in 0.1s;
 }

@@ -12,6 +12,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   <script type="text/javascript" src="./resources/js/tests.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
    crossorigin="anonymous">
@@ -25,21 +26,21 @@
     <div class="containter">
       <div class="row flex-features">
         <!-- Offset div -->
-        <div class="col-md-1">
+        <div class="col-md-1 col-xs-1">
         </div>
         <!-- Header logo -->
-        <div class="logo col-md-7">
-          <div>
-            <h3>trackster</h3>
+        <div class="logo col-md-7 col-xs-7">
+          <div class="flex-features">
+            <h3 class="header-title">trackster</h3>
           </div>
         </div>
         <!-- Header search section -->
-        <div class="search-input-box flex-features col-md-2">
-          <input type="text" placeholder="Whatcha lookin' for" class="input">
+        <div class="search-input-box flex-features col-md-2 col-xs-2">
+          <input type="text" placeholder="Whatcha lookin' for" class="input border-radius-feature">
         </div>
-        <div class="flex-features col-md-2">
-          <button id="search-button">
-            <i class="fa fa-search fa-lg"></i>
+        <div id="button-feature" class="flex-features col-md-1 col-xs-1">
+          <button id="search-button" class="border-radius-feature">
+            <i class="fa fa-search fa-2x"></i>
           </button>
         </div>
       </div>
@@ -50,26 +51,26 @@
   <!-- Main section -->
   <div class="main">
     <!-- Header columns title section -->
-    <div class="container-fluid title-of-table-columns">
+    <div class="container-fluid table-headers">
       <div class="row flex-features">
-        <h4 class="col-md-3 col-xs-3"></h4>
-        <h4 class="col-md-3 col-xs-3">Song</h4>
+        <h4 class="col-md-2 col-xs-2"></h4>
+        <h4 class="col-md-2 col-xs-2">Song</h4>
         <h4 class="col-md-2 col-xs-2">Artist</h4>
-        <h4 class="col-md-2 col-xs-2">Album</h4>
+        <h4 class="col-md-3 col-xs-3">Album</h4>
         <h4 class="col-md-2 col-xs-2">Listeners</h4>
       </div>
     </div>
     <!-- Container of requested song list -->
     <div id="request-list" class="container-fluid">
-      <div id="request-row" class="row flex-features">
-        <h4 class="col-md-3 col-xs-3">
+      <!--<div class="row flex-features">
+        <h4 class="col-md-2 col-xs-2">
           <a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be" target="_blank"><i  class="fa fa-play-circle-o fa-lg"></i></a>
         </h4>
-        <h4 class="col-md-3 col-xs-3">With or without you</h4>
+        <h4 class="col-md-2 col-xs-2">With or without you</h4>
         <h4 class="col-md-2 col-xs-2">U2</h4>
-        <h4 class="col-md-2 col-xs-2">The Joshua tree</h4>
+        <h4 class="col-md-3 col-xs-3">The Joshua tree</h4>
         <h4 class="col-md-2 col-xs-2">101,839</h4>
-      </div>
+      </div>-->
     </div>
   </div>
 
